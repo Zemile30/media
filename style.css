@@ -14,31 +14,52 @@ a:hover {
   padding: 50px 0;
 }
 #blue .box {
+  display: flex;
+  justify-content: space-around;
+}
+#blue .box .minibox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 3px solid #3e5f80;
   width: 200px;
   height: 200px;
   background-color: #71a7c9;
 }
-#blue .box .minibox {
+#blue .box .minibox .textbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   height: 100px;
   background-color: #325373;
   transition: 3s;
 }
-#blue .box .minibox h1 {
+#blue .box .minibox .textbox h1 {
   color: white;
   font-size: 20px;
   font-weight: 700;
 }
-#blue .box:hover .minibox {
+#blue .box .minibox:hover .textbox {
   width: 150px;
-  height: 15 0px;
+  height: 150px;
+}
+@media (max-width: 750px) {
+  #blue .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 #demo {
   padding: 50px 0;
 }
-#demo .box .minibox {
+#demo .box {
+  display: flex;
+  justify-content: space-around;
+}
+#demo .box .minibox .textbox {
   width: 200px;
   height: 100px;
   background-color: #856476;
@@ -48,13 +69,26 @@ a:hover {
   padding: 15px 65px;
   transition: 2s;
 }
-#demo .box:hover .minibox {
+#demo .box .minibox:hover .textbox {
   cursor: pointer;
   border: 5px solid #856476;
   background-color: #422739;
 }
 @media (max-width: 800px) {
-  #demo .box .minibox {
+  #demo .box .minibox .textbox {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(104, 110, 168);
+    padding: 15px 23px;
+  }
+}
+@media (max-width: 600px) {
+  #demo .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #demo .box .minibox .textbox {
     width: 100px;
     height: 50px;
     background-color: rgb(104, 110, 168);
@@ -62,10 +96,15 @@ a:hover {
   }
 }
 @media (max-width: 500px) {
-  #demo .box .minibox {
+  #demo .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #demo .box .minibox .textbox {
     width: 50px;
     background-color: rgb(60, 13, 13);
-    font-size: 10px;
+    font-size: 8px;
     padding: 10px 15px;
   }
 }
@@ -73,7 +112,11 @@ a:hover {
 #radius {
   padding: 50px 0;
 }
-#radius .box .minibox {
+#radius .box {
+  display: flex;
+  justify-content: space-around;
+}
+#radius .box .minibox .textbox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,18 +126,46 @@ a:hover {
   border-radius: 100px;
   transition: 2s;
 }
-#radius .box .minibox h1 {
+#radius .box .minibox .textbox h1 {
   color: white;
   font-size: 25px;
   font-weight: 700;
 }
-#radius .box:hover .minibox {
+#radius .box .minibox:hover .textbox {
   border-radius: 40px;
 }
 @media (max-width: 800px) {
-  #radius .box .minibox {
+  #radius .box .minibox .textbox {
     width: 50px;
     height: 50px;
     background-color: rgb(188, 206, 111);
   }
+}
+@media (max-width: 500px) {
+  #radius .box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#text {
+  padding: 40px 0;
+}
+#text .box {
+  position: absolute;
+  right: 347px;
+  bottom: 1720px;
+}
+#text .box .minibox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(86, 109, 131);
+  margin: 20px;
+}
+#text .box .minibox h1 {
+  color: white;
+  font-size: 30px;
 }/*# sourceMappingURL=style.css.map */
