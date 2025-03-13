@@ -1,18 +1,34 @@
 #demo
     padding: 50px 0
-    .minibox
-        width: 200px
-        height: 100px
-        background-color:  #856476
-        color:  #ffff
-        font-size: 20px
-        border-radius: 5px
-        padding: 15px 65px
-        transition: 2s
-    &:hover
+    .box
         .minibox
-            cursor: pointer
-            border: 5px solid  #856476
-            background-color:  #422739
-            
+            width: 200px
+            height: 100px
+            background-color:  #856476
+            color:  #ffff
+            font-size: 20px
+            border-radius: 5px
+            padding: 15px 65px
+            transition: 2s
+        &:hover
+            .minibox
+                cursor: pointer
+                border: 5px solid  #856476
+                background-color:  #422739
+    @media (max-width: 800px)
+        .box
+            .minibox
+                width: 100px
+                height: 50px
+                background-color: rgb(104, 110, 168)
+                padding: 15px 23px
+    @media (max-width: 500px)
+        .box
+            .minibox
+                width: 50px
+                background-color: rgb(60, 13, 13)
+                font-size: 10px
+                padding: 10px 15px
+
+
         
