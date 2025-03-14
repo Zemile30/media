@@ -151,11 +151,6 @@ a:hover {
 #text {
   padding: 40px 0;
 }
-#text .box {
-  position: absolute;
-  right: 347px;
-  bottom: 1720px;
-}
 #text .box .minibox {
   display: flex;
   justify-content: center;
@@ -168,4 +163,31 @@ a:hover {
 #text .box .minibox h1 {
   color: white;
   font-size: 30px;
+}
+#text .absolute {
+  position: absolute;
+  left: 420px;
+  top: 1720px;
+}
+
+#lesson {
+  padding: 40px 0;
+}
+#lesson .box .minibox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(105, 144, 107);
+  margin: 20px;
+}
+#lesson .box .minibox h1 {
+  color: white;
+  font-size: 30px;
+}
+#lesson .absolute {
+  position: absolute;
+  left: 420px;
+  top: 2260px;
 }/*# sourceMappingURL=style.css.map */
